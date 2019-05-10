@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>news</title>
+  </head>
+  <body>
+    <div>
+      {% if new %}
+      {% for i in new %}
+      <!-- <p>{{ i.title|linebreaksbr }}</p> -->
+        <p>{{ i.title }}</p>
+      {% endfor %}
+
+      {% else %}
+      <p>no news</p>
+      {% endif %}
+
+    </div>
+
+  </body>
+</html>
